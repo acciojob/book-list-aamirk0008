@@ -8,6 +8,80 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+      <div class="main-card fade-in">
+        <div class="header">
+          <h1>MyBookList</h1>
+        </div>
+
+        <div class="form-section">
+          <div class="form-group">
+            <form id="book-form">
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label for="title" class="form-label">Book Title</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="title"
+                    placeholder="Enter book title"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="author" class="form-label">Author</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="author"
+                    placeholder="Enter author name"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="isbn" class="form-label">ISBN Number</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="isbn"
+                    placeholder="Enter ISBN number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <button type="submit" id="submit" class="btn">
+                  Add Book to List
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="table-section">
+          <div class="table-container">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Author</th>
+                  <th scope="col">ISBN#</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="book-list">
+                <tr class="empty-state">
+                  <td colspan="4">
+                    <div class="book-icon">📚</div>
+                    <div>No books added yet. Start building your library!</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
